@@ -4,7 +4,13 @@
 	<script src="/jquery-3.3.1.min.js" type="application/javascript"></script>
 </head>
 <body>
-<table data-page_number="2" class="activateSearch">
+	<div>
+	<form class="activeSearch_form" data-table_index="test_id"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+<table data-page_number="2" class="activeSearch_table">
 	<thead>
 		<tr>
 			<td data-link="true" data-column_index="NAME" data-link_URI="/test.php?id=" data-link_index="ID">
@@ -26,6 +32,37 @@
 		</tr>
 	</tbody>
 </table>
+</div>
+
+<div>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+	<form class="activeSearch_form"><input type="search"><input type="submit"></form>
+<table data-page_number="2" class="activeSearch_table" id="test_id">
+	<thead>
+		<tr>
+			<td data-link="true" data-column_index="NAME" data-link_URI="/test.php?id=" data-link_index="ID">
+				Name
+			</td>
+			<td data-column_index="EMAILss">
+				Emailsss
+			</td>
+			<td data-column_index="PHONE">
+				Phone
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Yannick</td>
+			<td>zeyaya94@gmail.com</td>
+			<td>0415142510</td>
+		</tr>
+	</tbody>
+</table>
+</div>
 <script src="/search.js" type="application/javascript"></script>
 </body>
 </html>
